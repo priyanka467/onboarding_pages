@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Kala - Onboarding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Logo Page (Page 1) -->
+    <div id="logo-page" class="page">
+        <div class="content">
+            <img src="logo.png" alt="Tech Kala Logo" class="logo">
+            <h1>TECH Kala</h1>
+        </div>
+    </div>
+
+    <!-- Onboarding Page 2 -->
+    <div id="page2" class="page hidden">
+        <div class="content">
+            <h2>Looks like you’re new here!</h2>
+            <p>Sign up with your mobile number to get started.</p>
+            <input type="text" placeholder="Enter your mobile number" id="mobile" />
+            <button onclick="goToPage(3)">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Onboarding Page 3 -->
+    <div id="page3" class="page hidden">
+        <div class="content">
+            <h2>Enter your Verification Code</h2>
+            <p>We sent a verification code to your mobile number.</p>
+            <input type="text" placeholder="Enter verification code" id="otp" />
+            <button onclick="goToPage(4)">Verify</button>
+        </div>
+    </div>
+
+    <!-- Onboarding Page 4 -->
+    <div id="page4" class="page hidden">
+        <div class="content">
+            <h2>Let’s setup your account!</h2>
+            <p>Your taste inspires our collection — discover craftsmanship that speaks to you.</p>
+            <input type="text" placeholder="Your Name" id="name" />
+            <input type="number" placeholder="Your Age" id="age" />
+            <select id="gender">
+                <option value="">Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <button onclick="goToHome()">Continue</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
